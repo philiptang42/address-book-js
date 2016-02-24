@@ -15,4 +15,9 @@ contacts = new Array();
 contacts[0] = bob
 contacts[1] = mary
 
-console.log(mary.phoneNumber);
+var printPerson = function(person) {
+  console.log(person.firstName + " " + person.lastName)
+};
+
+printPerson(contacts[0])
+printPerson(contacts[1])
