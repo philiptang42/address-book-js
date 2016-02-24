@@ -5,6 +5,14 @@ var bob = {
     email: "bob.jones@example.com"
 };
 
-console.log(bob.firstName);
-console.log(bob.lastName);
-console.log(bob.email);
+mary = new Object();
+mary.firstName = "Mary";
+mary.lastName = "Johnson";
+mary.phoneNumber = "(650) 888-8888";
+mary.email = "mary.johnson@example.com";
+
+contacts = new Array();
+contacts[0] = bob
+contacts[1] = mary
+
+console.log(mary.phoneNumber);
