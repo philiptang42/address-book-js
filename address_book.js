@@ -19,5 +19,21 @@ var printPerson = function(person) {
   console.log(person.firstName + " " + person.lastName)
 };
 
-printPerson(contacts[0])
-printPerson(contacts[1])
+var list = function() {
+  contactsLength = contacts.length
+  for (i = 0; i <= (contactsLength - 1); i++) {
+    printPerson(contacts[i]);
+  }
+};
+
+var search = function(lastName) {
+  var contactsLength = contacts.length;
+  for (var i = 0; i < contactsLength; i++) {
+    if(contacts[i].lastName === lastName) {
+      printPerson(contacts[i]);
+    }
+  }
+};
+
+list()
+search("Jones")
