@@ -35,5 +35,15 @@ var search = function(lastName) {
   }
 };
 
+var add = function(firstName, lastName, email, phoneNumber) {
+  contacts[contacts.length] = {
+    firstName: firstName,
+    lastName: lastName,
+    email: email,
+    phoneNumber: phoneNumber
+  }
+};
+
+add("Philip", "Tang", "pt@gmail.com", "555-555-5555")
+
 list()
-search("Jones")
